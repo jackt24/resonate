@@ -8,7 +8,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@azure/microsoft-playwright-testing": "^1.0.0-beta.3",
     "@playwright/test": "^1.48.0",
-    "@types/node": "^22.7.5"
+    "@types/node": "^22.7.5",
+    "dotenv": "^16.4.5"
   }
 }
