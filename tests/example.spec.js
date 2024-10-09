@@ -14,6 +14,6 @@ test('Visit the Resonate - Who Are We - page', async ({ page }) => {
   // Click the get started link.
   await page.getByRole('link', { name: 'Who We Are' }).click();
 
-  // Expects page to have a heading with the name of Installation.
+  // Expects page to have a heading with the name of Our Journey.
   await expect(page.getByRole('heading', { name: 'Our Journey' })).toBeVisible();
 });
