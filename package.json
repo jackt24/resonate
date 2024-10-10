@@ -1,13 +1,13 @@
 {
   "name": "resonate-demo",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000r\u0000e\u0000s\u0000o\u0000n\u0000a\u0000t\u0000e\u0000\r\u0000 \u0000",
+  "description": "Basic test suite to demonstrate Playwright/Azure for Resonate",
   "main": "index.js",
   "scripts": {
     "lint": "eslint"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jack E Taylor",
   "license": "ISC",
   "devDependencies": {
     "@azure/microsoft-playwright-testing": "^1.0.0-beta.3",
