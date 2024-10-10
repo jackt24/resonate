@@ -25,7 +25,7 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: Run Playwright Cucumber tests
-      run: npx playwright test --project=cucumber --reporter=html --output=cucumber-report
+      run: npx playwright test --reporter=html --output=cucumber-report
 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
