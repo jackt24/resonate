@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 338074599
+              "duration": 291169199
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "User navigates to the Browserstack Homepage",
             "match": {
-              "location": "tests\\steps\\homepage.steps.js:21"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 1302690600
+              "duration": 857902200
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 7,
             "name": "User clicks on Product Menu",
             "match": {
-              "location": "tests\\steps\\homepage.steps.js:27"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 171103699
+              "duration": 300585999
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 9,
             "name": "It should show Web Testing Product",
             "match": {
-              "location": "tests\\steps\\homepage.steps.js:35"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 18864700
+              "duration": 11688599
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 169487099
+              "duration": 188235599
             }
           }
         ],
@@ -80,7 +80,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 227487900
+              "duration": 265395700
             }
           },
           {
@@ -89,11 +89,11 @@
             "line": 13,
             "name": "User Navigates to Browserstack Homepage",
             "match": {
-              "location": "tests\\steps\\homepage.steps.js:43"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 891746799
+              "duration": 845199700
             }
           },
           {
@@ -102,11 +102,11 @@
             "line": 15,
             "name": "User clicks on Pricing Menu",
             "match": {
-              "location": "tests\\steps\\homepage.steps.js:49"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:49"
             },
             "result": {
               "status": "passed",
-              "duration": 617181900
+              "duration": 802046899
             }
           },
           {
@@ -115,11 +115,11 @@
             "line": 17,
             "name": "It should Display correct Product lists in left Nav",
             "match": {
-              "location": "tests\\steps\\homepage.steps.js:55"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:55"
             },
             "result": {
               "status": "passed",
-              "duration": 131198000
+              "duration": 168360399
             }
           },
           {
@@ -127,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 182835100
+              "duration": 244380699
             }
           }
         ],

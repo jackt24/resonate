@@ -35,6 +35,11 @@ module.exports = defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'cucumber', // Name for your Cucumber test project
+      testDir: './tests/features', // Directory for your Cucumber tests
+      use: { ...devices['Desktop Chrome'] }, // You can set the browser to run
+    },
+    {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
