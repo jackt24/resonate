@@ -25,13 +25,13 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: Run Playwright Cucumber tests
-      run: npx cucumber-js test
+      run: npx cucumber-js tests/features --format html:cucumber-report/report.html
 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
         name: cucumber-report
-        path: /
+        path: cucumber-report/
         retention-days: 30
 
     - name: Upload HTML report to Azure
