@@ -25,7 +25,10 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: Run Playwright Cucumber tests
-      run: npx cucumber-js tests/features --format html:cucumber-report/report.html
+      run: npx cucumber-js tests/features --format html:cucumber-report/cucumber-report.html
+    
+    - name: List cucumber-report contents
+      run: ls -la cucumber-report/
 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
@@ -37,12 +40,19 @@ jobs:
     - name: Upload HTML report to Azure
       shell: bash
       run: |
-        REPORT_DIR='cucumber-run-${{ github.run_id }}-${{ github.run_attempt }}'
-        azcopy cp --recursive "./cucumber-report/*" "https://resonatestorage.blob.core.windows.net/\$web/$REPORT_DIR"
-        echo "::notice title=HTML report url::https://resonatestorage.blob.core.windows.net/\$web/$REPORT_DIR/index.html"
+          REPORT_DIR='cucumber-run-${{ github.run_id }}-${{ github.run_attempt }}'
+          echo "Uploading reports to Azure..."
+          azcopy cp --recursive "./cucumber-report/*" "https://resonatestorage.blob.core.windows.net/\$web/$REPORT_DIR"
+          if [ $? -eq 0 ]; then
+            echo "Upload succeeded!"
+          else
+            echo "Upload failed!"
+          fi
+          echo "::notice title=HTML report url::https://resonatestorage.blob.core.windows.net/\$web/$REPORT_DIR/cucumber-report.html"
       env:
-        AZCOPY_AUTO_LOGIN_TYPE: SPN
-        AZCOPY_SPA_APPLICATION_ID: '${{ secrets.AZCOPY_SPA_APPLICATION_ID }}'
-        AZCOPY_SPA_CLIENT_SECRET: '${{ secrets.AZCOPY_SPA_CLIENT_SECRET }}'
-        AZCOPY_TENANT_ID: '${{ secrets.AZCOPY_TENANT_ID }}'
+          AZCOPY_AUTO_LOGIN_TYPE: SPN
+          AZCOPY_SPA_APPLICATION_ID: '${{ secrets.AZCOPY_SPA_APPLICATION_ID }}'
+          AZCOPY_SPA_CLIENT_SECRET: '${{ secrets.AZCOPY_SPA_CLIENT_SECRET }}'
+          AZCOPY_TENANT_ID: '${{ secrets.AZCOPY_TENANT_ID }}'
+      
 
