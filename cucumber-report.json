@@ -4,56 +4,56 @@
     "elements": [
       {
         "description": "",
-        "id": "homepage-functionality;verify-product-web-testing",
+        "id": "comprehensive-website-check-for-resonate;verify-the-title-of-the-homepage",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Verify Product Web Testing",
+        "line": 4,
+        "name": "Verify the title of the homepage",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 217963700
+              "duration": 205149200
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "User navigates to the Browserstack Homepage",
+            "name": "I navigate to \"https://www.resonate.tech\"",
             "match": {
-              "location": "tests\\features\\step_definitions\\homepage.steps.js:21"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 868188500
+              "duration": 1553825700
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "User clicks on Product Menu",
+            "line": 6,
+            "name": "I get the page title",
             "match": {
-              "location": "tests\\features\\step_definitions\\homepage.steps.js:27"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 109808199
+              "duration": 3158100
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "It should show Web Testing Product",
+            "line": 7,
+            "name": "the page title should be \"Resonate | Traffic Management Control | Traffic Disruption Management\"",
             "match": {
-              "location": "tests\\features\\step_definitions\\homepage.steps.js:35"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:23"
             },
             "result": {
               "status": "passed",
-              "duration": 9276499
+              "duration": 956599
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 84115099
+              "duration": 71434099
             }
           }
         ],
@@ -70,56 +70,56 @@
       },
       {
         "description": "",
-        "id": "homepage-functionality;verify-pricing-product-lists",
+        "id": "comprehensive-website-check-for-resonate;check-for-the-presence-of-the-contact-us-link-in-the-navbar",
         "keyword": "Scenario",
-        "line": 11,
-        "name": "Verify Pricing Product Lists",
+        "line": 10,
+        "name": "Check for the presence of the Contact Us link in the navbar",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 182370000
+              "duration": 194438900
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 13,
-            "name": "User Navigates to Browserstack Homepage",
+            "line": 11,
+            "name": "I navigate to \"https://www.resonate.tech\"",
             "match": {
-              "location": "tests\\features\\step_definitions\\homepage.steps.js:43"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 991688400
+              "duration": 1475660900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 15,
-            "name": "User clicks on Pricing Menu",
+            "line": 12,
+            "name": "I check for the \"Say Hello\" link",
             "match": {
-              "location": "tests\\features\\step_definitions\\homepage.steps.js:49"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 842104899
+              "duration": 252800
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 17,
-            "name": "It should Display correct Product lists in left Nav",
+            "line": 13,
+            "name": "I should see the \"Say Hello\" link on the page",
             "match": {
-              "location": "tests\\features\\step_definitions\\homepage.steps.js:55"
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:31"
             },
             "result": {
               "status": "passed",
-              "duration": 187790000
+              "duration": 16004899
             }
           },
           {
@@ -127,7 +127,285 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 192461799
+              "duration": 75187300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "comprehensive-website-check-for-resonate;check-the-form-exists-on-the-contact-us-page",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Check the form exists on the Contact Us page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 178346399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I navigate to \"https://www.resonate.tech/ui/content/contactus.aspx\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1407643299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see a form on the page",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12782699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 74057399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "comprehensive-website-check-for-resonate;validate-homepage-content-for-the-\"welcome\"-message",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Validate homepage content for the \"Welcome\" message",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 173658699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I navigate to \"https://www.resonate.tech/ui/content/contactus.aspx\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1392109700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see the text \"Say Hello\" on the page",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15173000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50293699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "comprehensive-website-check-for-resonate;verify-footer-contains-copyright-information",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Verify footer contains copyright information",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 202330699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I navigate to \"https://www.resonate.tech\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1786421600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the footer should contain \"© Copyright 2024 Resonate Group Limited. All rights reserved.\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13397199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 69049399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "comprehensive-website-check-for-resonate;check-all-images-load-correctly-on-the-homepage",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Check all images load correctly on the homepage",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 192406399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "I navigate to \"https://www.resonate.tech\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1325421399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I check all images",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "all images should be loaded correctly",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42829899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 58307199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "comprehensive-website-check-for-resonate;verify-the-website-is-responsive-on-mobile-devices",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Verify the website is responsive on mobile devices",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 174674000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I open the website on a mobile device",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1582099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "the layout should be adjusted for a mobile view",
+            "match": {
+              "location": "tests\\features\\step_definitions\\homepage.steps.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26034299
             }
           }
         ],
@@ -135,10 +413,10 @@
         "type": "scenario"
       }
     ],
-    "id": "homepage-functionality",
+    "id": "comprehensive-website-check-for-resonate",
     "line": 1,
     "keyword": "Feature",
-    "name": "Homepage Functionality",
+    "name": "Comprehensive Website Check for Resonate",
     "tags": [],
     "uri": "tests\\features\\homepage.feature"
   }
