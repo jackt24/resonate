@@ -31,7 +31,7 @@ jobs:
       if: ${{ !cancelled() }}
       with:
         name: cucumber-report
-        path: cucumber-report/
+        path: /
         retention-days: 30
 
     - name: Upload HTML report to Azure
