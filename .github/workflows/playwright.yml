@@ -48,7 +48,7 @@ jobs:
           else
             echo "Upload failed!"
           fi
-          echo "::notice title=HTML report url::https://resonatestorage.blob.core.windows.net/\$web/$REPORT_DIR/cucumber-report.html"
+          echo "::notice title=HTML report url::https://resonatestorage.blob.core.windows.net/$web/$REPORT_DIR/index.html"
       env:
           AZCOPY_AUTO_LOGIN_TYPE: SPN
           AZCOPY_SPA_APPLICATION_ID: '${{ secrets.AZCOPY_SPA_APPLICATION_ID }}'
